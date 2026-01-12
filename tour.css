@@ -1,0 +1,305 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+ul  {
+  list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-image: url(/foto/mtaari\ foni.avif);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 50%;
+    padding-left: 100px;
+}
+
+.nav2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+
+}
+
+
+.nav2 a {
+    color: rgb(208, 207, 207);
+}
+
+
+
+.nav2 a:hover{
+    color:white;
+}
+
+
+.logo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 25rem;
+    
+}
+
+
+
+.logo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.login {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 20%;
+    padding-right: 50px;
+}
+
+.login2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.login2 li{
+    color: white;
+
+}
+
+    
+
+.rame a:hover {
+    color: gray;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .nav {
+        width: 70%;
+        padding-left: 20px;
+    }
+
+    .logo {
+        width: 15rem;
+    }
+
+    .login {
+        width: 30%;
+        padding-right: 20px;
+    }
+}
+
+
+/* header end */
+
+body {
+ background-image: url(/foto/mtaari\ foni.avif);
+  background-size: cover;
+  color: #ddd;
+}
+
+
+
+
+
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.head img{
+    margin: 40px;
+
+}
+
+.samkutxed{
+    transform: rotate(180deg);
+    width: 6%;
+}
+
+
+
+
+
+
+.tour {
+  width: 70%;
+  margin: 80px auto;
+}
+
+.tour h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #555;
+  padding: 20px 0;
+}
+
+.date:last-child {
+  border-bottom: 1px solid #555;
+}
+
+.day {
+  color: #4da6ff;
+  font-size: 14px;
+}
+
+.info p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 8px 18px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+
+
+/* footter start */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-size: cover;
+    width: 100%;
+    height: 285px;
+}
+
+.patara_xazi {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+
+.gamomyevi {
+    color: white;
+    font-size: 1rem;
+    
+}
+
+
+
+
+.bolo {
+    color: white;
+    font-size: 0.75rem;
+    
+    
+}
+
+.footer_logo {
+    height: 50px;
+    margin-bottom: 15px;
+    
+}
+
+
+.bolo a {
+   color: rgba(255, 254, 254, 0.55);
+
+}
+
+
+
+@media (max-width: 768px) {
+    .tour {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .date {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .btn {
+        align-self: center;
+    }
+}
+
+
+/* footrer end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
