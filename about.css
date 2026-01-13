@@ -185,6 +185,20 @@ blockquote {
 }
 
 
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 24px;
+    width: 90%;
+  }
+
+  .text,
+  .image {
+    width: 100%;
+  }
+}
+
+
 
 
 

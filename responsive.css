@@ -138,13 +138,17 @@
     margin: 40px auto;
   }
 
+  /* keep date items on one row where possible, allow wrapping so buy button stays aligned
+     and items remain centered on smaller screens */
   .date {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
+    align-items: center;
   }
 
   .btn {
+    /* ensure the button doesn't stretch awkwardly when items wrap */
     align-self: center;
   }
 
@@ -237,6 +241,45 @@
   #nav-toggle:checked + .burger span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
   #nav-toggle:checked + .burger span:nth-child(2) { opacity: 0; }
   #nav-toggle:checked + .burger span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+}
+
+/* Extended breakpoint: show mobile/burger menu earlier at <=1100px to avoid link collisions */
+@media (max-width: 1100px) {
+  /* slightly reduce horizontal gap of links to avoid overlap */
+  .nav2 { gap: 1.5rem; }
+
+  /* show burger control and enable checkbox-driven nav like the mobile rules */
+  .burger {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 36px;
+    height: 28px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 16px;
+    z-index: 1001;
+  }
+
+  .burger span { display: block; height: 3px; background: white; border-radius: 2px; }
+
+  /* hide the standard nav and allow the checkbox toggle to reveal it */
+  .nav { display: none !important; }
+
+  #nav-toggle { display: none; }
+  #nav-toggle:checked ~ .nav {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.85);
+    padding: 20px 16px;
+    gap: 12px;
+    z-index: 1000;
+  }
 }
 
 /* End responsive.css */
